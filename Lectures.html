@@ -5,121 +5,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lectures</title>
-    
-    <style>
-      body {
-        background-color: lightblue;
-        text-align: center;
-      }
-      .home {
-        font-size: 25px;
-      }
-      .Lectures {
-        font-size: 100px;
-        text-align: center;
-        display: block;
-        font-style: normal;
-        font-family: Arial, Helvetica, sans-serif;
-        font-style: italic;
-      }
-      .gcolor {
-        background-color: black;
-        height: 4px;
-      }
-      .first-img {
-        width: 450px;
-        float: left;
-      }
-      .first_div {
-        width: 1500px;
-        height: 209px;
-        margin-top: 150px;
-      }
-      .second-img {
-        width: 450px;
-        float: left;
-        height: 200px;
-        
-      }
-      .second_div {
-        width: 1500px;
-        height: 209px;
-        margin-top: 300px;
-        display: block;
-      }
-      .LN {
-        font-size: 25px;
-        font-weight: bold;
-      }
-      
-      .Dt{
-        margin-right: 450px;
-        margin-top: 100px;
-        font-weight: bold;
-        font-size: 30px;
-        display: block;
-        float: left;
-      }
-      .zimg{
-        float: left;
-        width: 900px;
-        margin-top: 40px;
-        display: block;
-        margin-bottom: 200px;
-      }
-      .bigbox{
-       display: block;
-       width: 1450px;
-
-      }
-      .LINKS{
-        margin-top: 140px;
-        display: inline-block;
-        font-size: 30px;
-        width: 200px;
-        margin-right: 300px;
-      }
-      @media (max-width: 768px) {
-      .title {
-        font-size: 1.5rem;
-      }
-
-      .img {
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .title {
-        font-size: 1.2rem;
-      }
-    }
-    </style>
+    <title>Lectures  Zohar Komargodski</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="description" content="Lecture notes, slides, and recordings by Zohar Komargodski on defects in quantum field theory and related topics." />
+    <meta property="og:title" content="Lectures  Zohar Komargodski" />
+    <meta property="og:description" content="Slides and recordings of selected lectures." />
   </head>
   <body>
-    
-    <div class="Lectures">Lectures</div>
-    <div class="gcolor"></div>
-    <div class="first_div">
-      <a  href="Pdfs/Racah Lecture.pdf" target="_blank"
-        ><img class="first-img" src="Pdfs/Chern-Simons.png">
-      </a>
-      <a class="LN" href="Pdfs/Racah Lecture.pdf">Annual Racah Memorial Lecture 2024</a>
-      <div class="second_div">
-        <a  href="Pdfs/Strings2022 ZK.pdf" target="_blank"
-          ><img class="second-img" src="Pdfs/string img.png">
-        </a>
-        <a class="LN" href="Pdfs/Strings2022 ZK.pdf">Strings 2022</a>
-        <span class="Dt">Defects in Quantum Field Theory from Topological to Dynamical Aspects Series:</span>
-        <div class="bigbox">
-  <img class="zimg"  src="Pdfs/V2.png" alt="An image of a lecture"> 
-        <div class="LINKS">
-        <a href="https://www.youtube.com/watch?v=01T0pOw6PY8">Session I</a>
-        <a href="https://www.youtube.com/watch?v=ytUYhbRVzgc">Session II</a>
-        <a href="https://www.youtube.com/watch?v=C6mx79m1XiI&t=2362s">Session III</a>
-        <a href="https://www.youtube.com/watch?v=Y1Hds7JRrZA">Session IV</a>
-      </div>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="container brand">
+      <h1 class="site-title">Lectures</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="CV.html">CV</a>
+        <a href="Lectures.html">Lectures</a>
+        <a href="publications.html">Publications</a>
+        <a href="family.html">Family Photos</a>
+      </nav>
     </div>
-  </body>
+  </header>
+  <main id="main-content" class="container">
+    <article class="card">
+      <h2>Lectures & Slides</h2>
+      <p><a href="Pdfs/Racah Lecture.pdf" target="_blank">Annual Racah Memorial Lecture 2024 (PDF)</a></p>
+      <p class="small">Selected lecture materials with slides and recordings; useful for students and researchers interested in defects and advanced QFT topics.</p>
+      <div class="first_div">
+        <a href="Pdfs/Racah Lecture.pdf" target="_blank"><img class="first-img" src="Pdfs/Chern-Simons.png" alt="Racah Lecture thumbnail"></a>
+        <a class="LN" href="Pdfs/Racah Lecture.pdf">Annual Racah Memorial Lecture 2024</a>
+        <p class="small">Overview of recent developments and key results.</p>
+      </div>
+
+      <div class="second_div" style="margin-top:1rem">
+        <a href="Pdfs/strings2022-zk.pdf" target="_blank"><img class="second-img" src="Pdfs/strings-2022.png" alt="Strings 2022 thumbnail"></a>
+        <a class="LN" href="Pdfs/Strings2022 ZK.pdf">Strings 2022</a>
+      </div>
+
+      <div class="bigbox" style="margin-top:1rem">
+        <img class="zimg" src="Pdfs/V2.png" alt="Lecture series image">
+        <div class="LINKS">
+          <a href="https://www.youtube.com/watch?v=01T0pOw6PY8">Session I</a><br>
+          <a href="https://www.youtube.com/watch?v=ytUYhbRVzgc">Session II</a><br>
+          <a href="https://www.youtube.com/watch?v=C6mx79m1XiI&t=2362s">Session III</a><br>
+          <a href="https://www.youtube.com/watch?v=Y1Hds7JRrZA">Session IV</a>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p class="small">Website by Yoni Komargodski  <a href="mailto:zkomargo@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+</body>
 </html>
