@@ -4,22 +4,24 @@
   --primary:#0b5cff;
   --muted:#5b6b80;
   --card:#ffffff;
-  --max-width:1100px;
+  --max-width:1300px; /* increased layout width for more spacious layout */
 }
 
 *{box-sizing:border-box}
+.root-font{font-size:17px}
 body{
   margin:0;
   font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   color:var(--muted);
   background:var(--bg);
-  line-height:1.5;
+  line-height:1.6;
+  font-size:17px; /* slightly larger base font for readability */
 }
 .container{
   width:100%;
   max-width:var(--max-width);
   margin:0 auto;
-  padding:1rem;
+  padding:1.25rem; /* a touch more breathing room */
 }
 header.site-header{
   background:linear-gradient(90deg, rgba(11,92,255,0.06), rgba(11,92,255,0.02));
@@ -32,8 +34,9 @@ header .brand{
   gap:1rem;
   padding:1rem 0;
 }
-.brand h1{font-size:1.25rem;margin:0;color:var(--primary)}
-nav.main-nav a{margin-left:1rem;color:var(--primary);text-decoration:none;font-weight:600}
+.brand h1{font-size:1.5rem;margin:0;color:var(--primary)}
+.brand .site-title{font-weight:700}
+nav.main-nav a{margin-left:1.1rem;color:var(--primary);text-decoration:none;font-weight:700;font-size:1rem}
 nav.main-nav a:hover{text-decoration:underline}
 
 /* skip link for accessibility */
@@ -59,21 +62,21 @@ nav.main-nav a:hover{text-decoration:underline}
 
 .hero{
   display:flex;
-  gap:2rem;
+  gap:2.25rem;
   align-items:center;
-  padding:2rem 0;
+  padding:2.25rem 0;
 }
 .hero .hero-text{flex:1}
-.hero h2{margin:0 0 .5rem 0;font-size:1.5rem;color:#0a2a66}
-.hero p{margin:0 0 1rem 0}
+.hero h2{margin:0 0 .5rem 0;font-size:1.9rem;color:#0a2a66}
+.hero p{margin:0 0 1rem 0;font-size:1.05rem}
 .hero .actions{display:flex;gap:.75rem;flex-wrap:wrap}
-.action-btn{display:inline-block;padding:.65rem 1rem;border-radius:8px;background:var(--card);border:1px solid rgba(11,92,255,0.12);color:var(--primary);text-decoration:none;font-weight:600}
+.action-btn{display:inline-block;padding:.75rem 1.1rem;border-radius:10px;background:var(--card);border:1px solid rgba(11,92,255,0.12);color:var(--primary);text-decoration:none;font-weight:700}
 .action-btn.secondary{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--muted)}
 
 .hero img{width:260px;height:auto;border-radius:8px;object-fit:cover}
 
 main.section{padding:1rem 0}
-.card{background:var(--card);padding:1rem;border-radius:8px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 2px 8px rgba(12,12,12,0.03)}
+.card{background:var(--card);padding:1.5rem;border-radius:10px;border:1px solid rgba(0,0,0,0.05);box-shadow:0 6px 18px rgba(12,12,12,0.06)}
 
 footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align:center}
 
@@ -84,9 +87,9 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 }
 
 /* Utility */
-.small{font-size:.95rem;color:var(--muted)}
+.small{font-size:1rem;color:var(--muted)}
 .muted{color:#6b7280}
-.sep{height:1px;background:rgba(0,0,0,0.06);margin:1rem 0}
+.sep{height:1px;background:rgba(0,0,0,0.06);margin:1.25rem 0}
 
 /* Lecture thumbnails and large lecture image sizing */
 .first_div,
@@ -101,9 +104,9 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .second-img{
   display:block;
   width:100%;
-  max-width:280px; /* thumbnail max width (increased) */
+  max-width:340px; /* thumbnail max width (increased further) */
   height:auto;
-  border-radius:6px;
+  border-radius:8px;
   object-fit:cover;
 }
 
@@ -118,12 +121,12 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .bigbox .zimg{
   display:block;
   width:100%;
-  max-width:720px; /* increased for larger display */
+  max-width:880px; /* larger showcase */
   height:auto;
-  max-height:480px;
+  max-height:620px;
   object-fit:contain;
   margin:0 auto;
-  border-radius:6px;
+  border-radius:8px;
 }
 
 @media (max-width:800px){
@@ -145,14 +148,14 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .Belladiv img{
   display:block;
   width:100%;
-  max-width:260px; /* unified max width for family photos */
+  max-width:320px; /* unified max width for family photos (increased) */
   height:auto;
-  border-radius:8px;
+  border-radius:10px;
   object-fit:cover;
 }
 
 /* Make the Rizzy image slightly narrower so it visually matches others */
-.Yonidiv img.Yoni{max-width:220px}
+.Yonidiv img.Yoni{max-width:300px} /* scale rizzyboi to better match the larger photos */
 
 /* Bold and enlarge captions for family photos */
 [class$="color"] span{
@@ -161,6 +164,17 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
   font-size:1.08rem;
   color:var(--primary);
   margin-top:0.4rem;
+}
+
+@media (max-width:800px){
+  .Olgadiv img,
+  .Yonidiv img,
+  .Sophiediv img,
+  .Wdiv img,
+  .Elladiv img,
+  .Sashadiv img,
+  .Belladiv img{max-width:240px}
+  .Yonidiv img.Yoni{max-width:220px}
 }
 
 @media (max-width:480px){
