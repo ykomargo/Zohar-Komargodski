@@ -36,6 +36,27 @@ header .brand{
 nav.main-nav a{margin-left:1rem;color:var(--primary);text-decoration:none;font-weight:600}
 nav.main-nav a:hover{text-decoration:underline}
 
+/* skip link for accessibility */
+.skip-link{
+  position:absolute;
+  left:-999px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+.skip-link:focus{
+  left:1rem;
+  top:1rem;
+  width:auto;
+  height:auto;
+  background:var(--card);
+  padding:.5rem 1rem;
+  z-index:9999;
+  border-radius:6px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+}
+
 .hero{
   display:flex;
   gap:2rem;
