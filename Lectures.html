@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lectures  Zohar Komargodski</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Inline fallback styles for Lectures to ensure grid displays even if external CSS is delayed or altered -->
+    <style>
+      .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;align-items:start}
+      .grid-item{background:#fff;border-radius:8px;padding:.6rem;border:1px solid rgba(0,0,0,0.04)}
+      .pdf-thumb{display:block;width:100%;height:auto;border-radius:6px;object-fit:cover}
+      .grid-item .desc{margin-top:.4rem;color:#5b6b80}
+      @media (max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+      @media (max-width:600px){.grid{grid-template-columns:1fr}}
+    </style>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="manifest" href="/manifest.json">
     <meta name="description" content="Lecture notes, slides, and recordings by Zohar Komargodski on defects in quantum field theory and related topics." />
