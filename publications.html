@@ -3,129 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Publications</title>
-
-    <style>
-      .h1 {
-        font-size: 100px;
-        text-align: center;
-        display: block;
-        
-      }
-      .linkes {
-        width: 535px;
-        display: inline-block;
-      }
-      
-      .h2 {
-        font-size: 35px;
-      }
-      .home {
-        font-size: 25px;
-        display: inline;
-        margin-right: 650px;
-      }
-      body {
-        background-color: lightblue;
-      }
-      .reviews {
-        font-weight: bold;
-        font-size: 40px;
-      }
-      .LN {
-        font-size: 25px;
-        margin-left: 200px;
-        font-weight: bold;
-      }
-
-      .first-img {
-        width: 450px;
-        float: left;
-      }
-      .first_div {
-        width: 900px;
-        height: 209px;
-      }
-      .herextwo {
-        font-size: 30px;
-        margin-left: 1085px;
-      }
-      .Miss{
-        text-align: center;
-        font-weight: lighter;
-        
-      }
-      .LDRG{
-        font-size: 25px;
-        margin-left: 650px;
-        font-weight: bold;
-        display: inline;
-
-        
-        
-      }
-      .LDRG_2{
-        font-size: 25px;
-        margin-left: 180px;
-        font-weight: bold;
-      }
-      .second-img{
-        width: 450px;
-        float: inline-start;
-        display: inline;
-      }
-      .second_div{
-        height: 209px;
-        width: 900px;
-        
-      }
-      @media (max-width: 768px) {
-      .title {
-        font-size: 1.5rem;
-      }
-
-      .img {
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .title {
-        font-size: 1.2rem;
-      }
-    }
-    </style>
+    <title>Publications  Zohar Komargodski</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-    <h1><span class="h1">Publications</span> <p class="Miss">My publications can be found on:
-      <a
-          href="https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20a%20komargodski&ui-citation-summary=true"
-          >Inspire Hep</a
-        >
-        and
-        <a href="https://scholar.google.com/citations?user=AD-3MeQAAAAJ&hl=en"
-          >Google Scholar</a
-        >.</span
-      ></p></h1>
-    
-    <div class="linkes">
-      <p class="reviews">Reviews</p>
-
-      <div class="first_div">
-        <a  href="Pdfs/Komargodski.pdf" target="_blank"
-          ><img class="first-img" src="Pdfs/Lecture notes.png"
-        /></a>
-        <a class="LN" target="_blank" href="Pdfs/Komargodski.pdf">Lecture Notes</a>
-      </div>
-      <div class="second_div">
-        <a class="LDRG" target="_blank" href="Pdfs/Line Defects and the Renormalization Group.pdf">Line Defects and the  </a>
-        <a class="LDRG_2" target="_blank" href="Pdfs/Line Defects and the Renormalization Group.pdf">Renormalization Group </a>
-        <a href="Pdfs/Line Defects and the Renormalization Group.pdf" target="_blank"
-          ><img class="second-img" src="Pdfs/grid-dot.png"
-        /></a>
-        
-      </div>
+  <header class="site-header">
+    <div class="container brand">
+      <h1 class="site-title">Publications</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="CV.html">CV</a>
+        <a href="Lectures.html">Lectures</a>
+        <a href="publications.html">Publications</a>
+        <a href="family.html">Family Photos</a>
+      </nav>
     </div>
-  </body>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Publications</h2>
+      <p class="small">My publications can be found on <a href="https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20a%20komargodski&ui-citation-summary=true">Inspire Hep</a> and <a href="https://scholar.google.com/citations?user=AD-3MeQAAAAJ&hl=en">Google Scholar</a>.</p>
+
+      <section style="margin-top:1rem">
+        <h3>Selected PDFs</h3>
+        <div class="first_div">
+          <a href="Pdfs/Komargodski.pdf" target="_blank"><img class="first-img" src="Pdfs/lecture-notes.png" alt="Lecture notes"></a>
+          <a class="LN" target="_blank" href="Pdfs/Komargodski.pdf">Lecture Notes (PDF)</a>
+        </div>
+        <div class="second_div" style="margin-top:1rem">
+          <a target="_blank" href="Pdfs/Line Defects and the Renormalization Group.pdf">Line Defects and the Renormalization Group (PDF)</a>
+          <a href="Pdfs/Line Defects and the Renormalization Group.pdf" target="_blank"><img class="second-img" src="Pdfs/grid-dot.png" alt="Line defects"></a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="small">Website by Yoni Komargodski  <a href="mailto:zkomargo@gmail.com">Contact</a></p>
+    </div>
+  </footer>
+</body>
 </html>
