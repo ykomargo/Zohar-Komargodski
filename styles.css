@@ -87,3 +87,46 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .small{font-size:.95rem;color:var(--muted)}
 .muted{color:#6b7280}
 .sep{height:1px;background:rgba(0,0,0,0.06);margin:1rem 0}
+
+/* Lecture thumbnails and large lecture image sizing */
+.first_div,
+.second_div{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.first-img,
+.second-img{
+  display:block;
+  width:100%;
+  max-width:220px; /* thumbnail max width */
+  height:auto;
+  border-radius:6px;
+  object-fit:cover;
+}
+
+.first_div .LN,
+.second_div .LN{
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
+}
+
+/* Larger image used for the lecture series; constrain height so it doesn't dominate the page */
+.bigbox .zimg{
+  display:block;
+  width:100%;
+  max-width:560px;
+  height:auto;
+  max-height:360px;
+  object-fit:contain;
+  margin:0 auto;
+  border-radius:6px;
+}
+
+@media (max-width:480px){
+  .first-img,.second-img{max-width:140px}
+  .bigbox .zimg{max-width:100%;max-height:260px}
+}
