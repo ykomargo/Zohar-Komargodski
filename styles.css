@@ -156,6 +156,11 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
   align-items:start;
 }
 
+/* Featured layout support: make a featured item span two columns */
+.grid.featured-layout{grid-template-columns:repeat(3,1fr)}
+.grid.featured-layout .featured{grid-column:1 / span 2}
+.grid.featured-layout .featured .pdf-thumb{max-height:420px;object-fit:cover}
+
 .grid-item{
   background:var(--card);
   border-radius:10px;
@@ -177,6 +182,7 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 
 @media (max-width:1000px){
   .grid{grid-template-columns:repeat(2,1fr)}
+  .grid.featured-layout .featured{grid-column:1 / -1}
   .pub-grid{grid-template-columns:1fr}
 }
 @media (max-width:600px){
