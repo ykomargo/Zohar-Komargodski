@@ -70,7 +70,7 @@ nav.main-nav a:hover{text-decoration:underline}
 .action-btn{display:inline-block;padding:.65rem 1rem;border-radius:8px;background:var(--card);border:1px solid rgba(11,92,255,0.12);color:var(--primary);text-decoration:none;font-weight:600}
 .action-btn.secondary{background:transparent;border:1px solid rgba(0,0,0,0.06);color:var(--muted)}
 
-.hero img{width:220px;height:auto;border-radius:8px;object-fit:cover}
+.hero img{width:260px;height:auto;border-radius:8px;object-fit:cover}
 
 main.section{padding:1rem 0}
 .card{background:var(--card);padding:1rem;border-radius:8px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 2px 8px rgba(12,12,12,0.03)}
@@ -101,7 +101,7 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .second-img{
   display:block;
   width:100%;
-  max-width:220px; /* thumbnail max width */
+  max-width:280px; /* thumbnail max width (increased) */
   height:auto;
   border-radius:6px;
   object-fit:cover;
@@ -118,17 +118,21 @@ footer.site-footer{padding:2rem 0;color:var(--muted);font-size:0.9rem;text-align
 .bigbox .zimg{
   display:block;
   width:100%;
-  max-width:560px;
+  max-width:720px; /* increased for larger display */
   height:auto;
-  max-height:360px;
+  max-height:480px;
   object-fit:contain;
   margin:0 auto;
   border-radius:6px;
 }
 
+@media (max-width:800px){
+  .first-img,.second-img{max-width:220px}
+}
+
 @media (max-width:480px){
-  .first-img,.second-img{max-width:140px}
-  .bigbox .zimg{max-width:100%;max-height:260px}
+  .first-img,.second-img{max-width:160px}
+  .bigbox .zimg{max-width:100%;max-height:320px}
 }
 
 /* Family photos sizing and captions */
